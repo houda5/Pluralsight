@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".submissionActivity"
+    android:id="@+id/submission"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/submission"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
+
+    <EditText
+        android:id="@+id/First_Name"
+        android:background="@drawable/custom_input"
+        android:ems="20"
+        android:hint="First Name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/EditTextCustomStyle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/Last_Name"
+        android:paddingLeft="10dp"
+        android:hint="Last Name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        style="@style/EditTextCustomStyle"
+        />
+        </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/Email_address"
+        android:layout_width="match_parent"
+        android:hint="@string/email_address"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="@style/EditTextCustomStyle"
+        />
+
+    <EditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:hint="@string/project_on_github_link"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="@style/EditTextCustomStyle"
+        />
+
+    <Button
+        android:id="@+id/button_submit"
+        style="@style/Widget.AppCompat.Button"
+        app:layout_constraintTop_toBottomOf="@+id/link"
+        android:background="@drawable/button_round"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" />
+
+</LinearLayout>
+</ScrollView>
